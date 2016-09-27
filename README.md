@@ -11,6 +11,13 @@ A simple basic Akka stream poc
 #Building and Running Project
 
 From Root folder : 
+
 sbt compile
 sbt run 
+
+#Project Inclusions
+
+1. Akka Basic Flow
+2. Akka Multiple Sources Flow
+
 
