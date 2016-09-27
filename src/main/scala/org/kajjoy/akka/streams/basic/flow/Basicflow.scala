@@ -6,7 +6,7 @@ import akka.stream.ActorMaterializer
 import akka.stream.javadsl.Sink
 import akka.stream.scaladsl.{Flow, Source}
 import org.kajjoy.akka.streams.basic.model.{InputCustomer, OutputCustomer}
-import org.kajjoy.akka.streams.basic.subscriber.FlowSubscriber
+import org.kajjoy.akka.streams.basic.subscriber.BasicFlowSubscriber
 
 object Basicflow {
 
@@ -27,7 +27,7 @@ object Basicflow {
           e
         }))
       .via(processor)
-      .runWith(Sink.actorSubscriber(FlowSubscriber.pops))
+      .runWith(Sink.actorSubscriber(BasicFlowSubscriber.pops))
 
   }
 
