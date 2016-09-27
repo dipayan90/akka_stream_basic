@@ -1,6 +1,6 @@
 package org.kajjoy.akka.streams.basic
 
-import org.kajjoy.akka.streams.basic.flow.{Basicflow, MultipleSourceFlow}
+import org.kajjoy.akka.streams.basic.flow.{Basicflow, BroadcastAndMergeFlow, MultipleSourceFlow}
 
 object Application extends App{
 
@@ -9,6 +9,8 @@ object Application extends App{
     Basicflow.start
     System.out.println("Multiple Source Flow")
     MultipleSourceFlow.start
+    System.out.println("Broadcast and merge Flow")
+    BroadcastAndMergeFlow.start
   }
 
 }
