@@ -21,5 +21,9 @@ sbt run
 2. Akka Multiple Sources Flow
 3. Akka split and merge Flow
 4. Akka streams variable time Flow
+5. Akka Streams aggregation using time window sliding
 
+#References
+
+1. https://softwaremill.com/windowing-data-in-akka-streams/
 
